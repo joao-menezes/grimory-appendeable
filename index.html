@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spellbook</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="container">
+    <form id="form-magic">
+        <h1>Spellbook</h1>
+
+        <h1>Upload JSON</h1>
+        <input type="file" id="file-input" accept=".json" required>
+        <br><br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="original_book">Original Book:</label>
+        <input type="text" id="original_book" name="original_book" required><br>
+
+        <label for="level">Level:</label>
+        <input type="number" id="level" name="level" required><br>
+
+        <label for="school">School:</label>
+        <input type="text" id="school" name="school" required><br>
+
+        <label for="casting_time">Casting Time:</label>
+        <input type="text" id="casting_time" name="casting_time" required><br>
+
+        <label for="range">Range:</label>
+        <input type="text" id="range" name="range" required><br>
+
+        <label for="components">Components (V, S, M):</label>
+        <input type="text" id="components" name="components" required><br>
+
+        <label for="material_paid">Material Paid:</label>
+        <select id="material_paid" name="material_paid">
+            <option value="false">No</option>
+            <option value="true">Yes</option>
+        </select><br>
+
+        <label for="ritual">Ritual:</label>
+        <select id="ritual" name="ritual">
+            <option value="false">No</option>
+            <option value="true">Yes</option>
+        </select><br>
+
+        <label for="classes">Classes:</label>
+        <input type="text" id="classes" name="classes" required><br>
+
+        <label for="subclasses">Subclasses:</label>
+        <input type="text" id="subclasses" name="subclasses" required><br>
+
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description" rows="4" required></textarea><br>
+
+        <label for="source">Source:</label>
+        <input type="text" id="source" name="source" required><br>
+
+        <label for="page">Page:</label>
+        <input type="number" id="page" name="page" required><br>
+
+        <label for="srd">SRD:</label>
+        <select id="srd" name="srd">
+            <option value="false">No</option>
+            <option value="true">Yes</option>
+        </select><br>
+
+        <button type="submit">Save</button>
+    </form>
+</div>
+
+<script src="/app.js"></script>
+</body>
+</html>
